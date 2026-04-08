@@ -1,5 +1,5 @@
 cover = imread("forest.jpg"); //載體圖
-secret = imread("p.bmp"); //浮水印 (或朴寶英???)
+secret = imread("p.bmp"); //浮水印 (沈老: 朴寶英♡)
 
 secret = imresize(secret, [size(cover,1) size(cover,2)]); //size一樣大
 
