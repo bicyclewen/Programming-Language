@@ -2,7 +2,7 @@ namespace 打NET作業4
 {
     public partial class Form1 : Form
     {
-        //初始值
+        //初始值 //全域變數
         int count = 0, add = 1;
         double total = 0;
         public Form1()
