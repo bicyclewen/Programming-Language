@@ -7,7 +7,7 @@ namespace 打NET作業5
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //計算按鈕
         {
             double general = Convert.ToDouble(textBox1.Text);
             double mid = Convert.ToDouble(textBox2.Text);
