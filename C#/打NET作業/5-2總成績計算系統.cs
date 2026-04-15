@@ -1,4 +1,4 @@
-namespace 打NET作業6 //使用MessageBox
+namespace 打NET作業6
 {
     public partial class Form1 : Form
     {
@@ -7,7 +7,7 @@ namespace 打NET作業6 //使用MessageBox
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //計算按鈕
         {
             double general = Convert.ToDouble(textBox1.Text);
             double mid = Convert.ToDouble(textBox2.Text);
@@ -17,6 +17,21 @@ namespace 打NET作業6 //使用MessageBox
             string txt = "   您的總成績 = ";
             txt += Convert.ToString(overall);
             MessageBox.Show(txt, "成績計算系統", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            textBox1.MaxLength = 3;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            textBox2.MaxLength = 3;
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            textBox3.MaxLength = 3;
         }
     }
 }
