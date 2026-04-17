@@ -4,3 +4,14 @@
    false
    true */
 
+public class Main {
+
+	public static void main(String[] args) {
+		boolean num1 = ((0x7FFD9876 >> 17)&1)==1;
+		boolean num2 = ((0x8FFE9876 >> 17)&1)==1;
+		
+		System.out.println(num1);
+		System.out.print(num2);
+	}
+
+}
