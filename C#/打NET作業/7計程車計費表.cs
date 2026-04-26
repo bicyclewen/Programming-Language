@@ -12,3 +12,5 @@ button2_Click //"清除"按鈕
   //重設
   label2.Text = "0";
   textBox1.Text = "";
+
+*修改 label 的 Autosize = false 能限制label在介面的範圍
