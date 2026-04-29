@@ -1,6 +1,7 @@
+//ReadString ~ 從鍵盤讀取資料，將之轉為數值型別
 import java.io.*; //星號表"全部" //放public前面
 public class ReadString{
-  public static void main(throws IO Exception String[] argv){
+  public static void main(String[] args) throws IOException{
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     // new 保留資料流空間 //緩衝字流轉換
     String str = br.readLine();
@@ -14,3 +15,4 @@ short c = Short.parseShort(s);
 int d = Integer.parseInt(s);
 long e = Long.parseLong(s);
 Float f = Float.parseFloat(t);
+double d = Double.parseDouble(t);
