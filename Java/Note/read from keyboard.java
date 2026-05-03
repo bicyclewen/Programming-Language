@@ -2,8 +2,9 @@
 import java.io.*; //星號表"全部" //放public前面
 public class ReadString{
   public static void main(String[] args) throws IOException{
+    //建立讀取器 // new 保留資料流空間 //緩衝字流轉換
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    // new 保留資料流空間 //緩衝字流轉換
+    //讀取字串
     String str = br.readLine();
   }
 }
