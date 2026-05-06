@@ -1,6 +1,5 @@
 int total = 0;
 button2_Click //"更新"按鈕
-{
     total = 0;
     int m, l, d;
     int medium, large, plus = 15;
@@ -65,10 +64,8 @@ button2_Click //"更新"按鈕
         total += (50 * d);
     }
     label15.Text = "總金額: " + total; //按鈕底下顯示的總金額
-}
 
 button1_Click //"結帳"按鈕
-{
     int discount=0;
     int delivery = 0;
     if (radioButton1.Checked) {
@@ -89,11 +86,9 @@ button1_Click //"結帳"按鈕
         total = 0;
     }
     MessageBox.Show("折扣: -"+ discount +"$\n外送: +"+delivery+ "$\n應付金額:" + total+"$", "確認金額", MessageBoxButtons.OK, MessageBoxIcon.Information);
-}
 
 
 button3_Click //"刪除"按鈕
-{
     //刪除checkedListBox有打勾的項目
     for (int i = checkedListBox1.CheckedItems.Count - 1; i >= 0; i--){ //從後面開始刪
         string item = checkedListBox1.CheckedItems[i].ToString();
@@ -104,4 +99,3 @@ button3_Click //"刪除"按鈕
         checkedListBox1.Items.Remove(checkedListBox1.CheckedItems[i]);
     }
     label15.Text = "總金額: " + total;
-}
