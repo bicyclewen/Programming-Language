@@ -6,6 +6,8 @@ public class ReadString{
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     //讀取字串
     String str = br.readLine();
+    br.close();
+    
   }
 }
 
