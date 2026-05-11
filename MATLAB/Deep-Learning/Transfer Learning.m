@@ -2,3 +2,5 @@
   修改圖片大小 種類
 
   隨機性多樣性
+
+*用上次Image Classification 的模型訓練這次的資料
