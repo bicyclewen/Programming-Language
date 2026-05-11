@@ -1,3 +1,4 @@
+https://www.mathworks.com/help/deeplearning/gs/create-simple-image-classification-network-using-deep-network-designer.html
 unzip("__.zip");
 imds = imageDatastore("DigitsData", ... %連接符號
        IncludeSubfolders=true, ...
