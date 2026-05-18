@@ -13,4 +13,7 @@ fullyConnected : 全連接層
 softmax : 在分類很重要，結束變機率值(總和為1)
 
 {} 會呈現content，() 會呈現索引值
-
+epoch ~ 每筆資料都跑過一次
+batch
+minibatch
+iteretion
