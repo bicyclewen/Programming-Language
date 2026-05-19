@@ -1,4 +1,4 @@
-//媽咪我終於通過了TAT
+//媽咪我在截止前終於通過了TAT
 import java.io.*;
 public class Main{
 	public static void main(String[] args) throws IOException{
