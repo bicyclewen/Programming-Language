@@ -18,7 +18,7 @@
 [public|private] void 函數名稱(){
   程式敘述;
 }
-
+==========================================================
 #函數參數傳遞方式
 call by value : //預設
   void byVal(int v){...}
@@ -26,3 +26,24 @@ call by address :
   void byRef(ref int v){...}
 call by out : 
   void byOut(out int v){...}
+#具名參數 Named Parameters
+public int sum(int a, int b, int c){
+  return a+b+c;
+}
+result = sum(b: 2, c: 3, a: 1);
+#選擇性參數 Optional Parameters
+
+==========================================================
+#變數範圍
+Local scope
+Global scope
+
+==========================================================
+#遞迴
+public int factorial(int n){
+  if(n==1) return 1;
+  else return n*factorial(n-1);
+  
+}
+
+
