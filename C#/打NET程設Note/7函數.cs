@@ -1,4 +1,4 @@
-對應作業~ 15、16
+對應作業~ 13、14
 函數 : 將程式中常用的共同程式碼獨立成程式區塊，以能重複呼叫這些函數之程式碼 (Functions Call)
 ((課本將其比喻成黑盒子~函數:Interface, 實際程式碼:Implementation))
 -
@@ -18,3 +18,11 @@
 [public|private] void 函數名稱(){
   程式敘述;
 }
+
+#函數參數傳遞方式
+call by value : //預設
+  void byVal(int v){...}
+call by address : 
+  void byRef(ref int v){...}
+call by out : 
+  void byOut(out int v){...}
