@@ -60,7 +60,13 @@ private void button1_Click(object sender, EventArgs e){ //"兌換"按鈕
                        list +
                        "\r\n==========================\r\n"+
                        "(\\ (\\\r\n(｡• ω•｡)つ—☆ • * ｡\r\n⊂.....ノ • ゜+.\r\nし— J...........°｡ +*ˊ˙˙)\r\n..................... ·ˊ,·*ˊ\"),·*ˊ\")\r\n.............................(,·ˊ(,·'* ☆";
-      MessageBox.Show(receipt, "噗鈴");
+       DialogResult tell2 = MessageBox.Show(receipt, "噗鈴");
+       if (tell2==DialogResult.OK) { 
+           foreach (TextBox index in box){
+           index.Text = "";
+      }
+       textBox1.Text = "";
+ }
    }
    else if (tell == DialogResult.No){
       foreach (TextBox index in box){
