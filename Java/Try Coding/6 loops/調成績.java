@@ -24,7 +24,8 @@ public class Main{
 			}
 		}
 		if(count>0){
-			System.out.printf("%.0f", total/count);
+			long average = Math.round(total/count);
+			System.out.printf("%d", average);
 		}
 	}
 }
