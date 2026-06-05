@@ -7,6 +7,6 @@ b) Specify Training Option 訓練參數
 options = trainingOptions("adam", ... %solver從sgdm改成adam
                           MaxEpochs=3, ... %最大訓練輪數從4改成3
 c) Test Neural Network
-accuracy = testnet(net,imdsValidation,"accuracy") %確認準確率函數
+accuracy = testnet(net,imdsTest,"accuracy") %確認準確率函數
 
 按Run
