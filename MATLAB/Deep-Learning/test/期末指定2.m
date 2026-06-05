@@ -4,20 +4,20 @@ https://www.mathworks.com/help/deeplearning/gs/create-simple-deep-learning-class
 a) 自動化計算
   numClasses = numel(categories(imdsTrain.Labels));
 b) 增加網路架構
-  inputSize = [28 28 1];
-  numClasses = numel(categories(imdsTrain.Labels));
-  
+  %參考 Create Simple Deep Learning Neural Network for Classification
   layers = [
       imageInputLayer(inputSize)
       
       convolution2dLayer(3,16,Padding="same")
       batchNormalizationLayer
       reluLayer
+      
       maxPooling2dLayer(2,Stride=2)
   
       convolution2dLayer(3,32,Padding="same")
       batchNormalizationLayer
       reluLayer
+      
       maxPooling2dLayer(2,Stride=2)
       
       convolution2dLayer(3,64,Padding="same")
