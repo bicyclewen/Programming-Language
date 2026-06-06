@@ -9,7 +9,7 @@ b)
 scores = minibatchpredict(net,imdsTest);
 YTest = scores2label(scores,classNames);
 TTest = imdsTest.Labels;
-accuracy = mean(YTest == TTest)
+accuracy = mean(YTest == TTest)*100
 
 figure;
 confusionchart(TTest,YTest);
