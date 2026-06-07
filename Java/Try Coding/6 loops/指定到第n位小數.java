@@ -11,13 +11,11 @@ public class Main{
 		}else{
 			int intP = v/d;
 			System.out.print(intP+".");
-			int decP=0, temp = v%d;
 			
+			v = (v%d)*10;
 			for(int i=1; i<=n; i++){
-				temp *= 10;
-				decP = temp/d;
-				System.out.print(decP);
-				temp %= d;
+				System.out.print(v/d);
+				v = (v%d)*10;
 			}
 		}
 	}
