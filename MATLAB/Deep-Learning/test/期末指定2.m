@@ -3,7 +3,8 @@ https://www.mathworks.com/help/deeplearning/gs/create-simple-deep-learning-class
 ~網路架構微調與自動化~
 a) 自動化計算
   numClasses = numel(categories(imdsTrain.Labels));
-b) 增加網路架構
+  categories()取類別,numel()算數量
+b) 增加網路架構~加深卷積層、maxPooling
   %參考 Create Simple Deep Learning Neural Network for Classification
   layers = [
       imageInputLayer(inputSize)
