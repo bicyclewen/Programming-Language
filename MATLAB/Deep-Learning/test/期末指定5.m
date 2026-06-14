@@ -1,15 +1,15 @@
 https://www.mathworks.com/help/deeplearning/gs/create-simple-deep-learning-classification-network.html
-https://www.mathworks.com/help/deeplearning/ug/create-simple-deep-learning-network-for-classification.html?s_tid=srchtitle_support_results_1_create%2520simple%2520deep%2520learning%2520classification%2520network
+https://www.mathworks.com/help/deeplearning/gs/get-started-with-transfer-learning.html
 
-~confusion matrix~
+~混淆矩陣confusion matrix~
 a) 切割資料
-[imdsTrain,imdsValidation, imdsTest] = splitEachLabel(imds,0.7,0.15,0.15,"randomized");
+[imdsTrain,imdsValidation, imdsTest] = splitEachLabel(imds,0.7,0.15,"randomized");
 
 b) 
-scores = minibatchpredict(net,imdsTest);
-YTest = scores2label(scores,classNames);
-TTest = imdsTest.Labels;
-accuracy = mean(YTest == TTest)*100
+inputSize = net.Layers(1).InputSize(1:2); %可省略(因為不用調照片)
+Ypred = minibatchpredict(net,imdsValidation);
+Ypred = scores2label(YTest,classNames);
 
-figure;
-confusionchart(TTest,YTest);
+TTarget = imdsTest.Labels;
+figure
+confusionchart(TTarget,Ypred);
