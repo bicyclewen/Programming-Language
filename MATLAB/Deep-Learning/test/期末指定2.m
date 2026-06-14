@@ -6,6 +6,7 @@ a) 自動化計算
   categories()取類別,numel()算數量
 b) 增加網路架構~加深卷積層、maxPooling
   %參考 Create Simple Deep Learning Neural Network for Classification
+  https://www.mathworks.com/help/deeplearning/ug/create-simple-deep-learning-network-for-classification.html?s_tid=srchtitle_support_results_1_simple+deeplearning
   layers = [
       imageInputLayer(inputSize)
       
