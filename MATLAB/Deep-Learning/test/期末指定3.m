@@ -2,11 +2,12 @@ https://www.mathworks.com/help/deeplearning/gs/create-simple-deep-learning-class
 
 ~更換資料集與輸入規格~
 a) 匯入 MerchData (在GetStartedWithTransferLearningExample資料夾)
+將data抓進當前資料夾，或者 dataFolder = fullfile(toolboxdir('nnet'),'nndemos','nndatasets','MerchData');)
 imds = imageDatastore("MerchData", ...
     IncludeSubfolders=true, ...
     LabelSource="foldernames");
 numTrainFiles = 750;
-[imdsTrain,imdsValidation,imdsTest] = splitEachLabel(imds,0.7,0.15,0.15,"randomized");
+[imdsTrain,imdsValidation,imdsTest] = splitEachLabel(imds,0.7,0.15,"randomized");
 
 b) 修改網路架構
 inputSize = [227 227 3];
@@ -19,3 +20,4 @@ options = trainingOptions("adam", ...
     Plots="training-progress", ...
     Metrics="accuracy", ...
     Verbose=false);
+accuracy = testnet(net,imdsTest,"accuracy")
