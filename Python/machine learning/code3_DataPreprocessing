@@ -1,0 +1,12 @@
+# Data Preprocessing
+
+#轉換器
+SimpleImputer : 遺漏值處理
+StandardScaler : 數據標準化 aka Z-score標準化，將資料減去平均值，再除以標準差。
+MinMaxScaler : 將數據做線性壓縮至[0,1]區間。適合圖像處理或文字多0、1編碼時。
+OneHotEncoder : 將類別型資料轉成0、1數字。
+
+#管道器
+
+#合併器
+ColumnTransformer : 水平合併器，水平結合不同轉換器或管道器。
