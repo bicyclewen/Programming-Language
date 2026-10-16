@@ -6,11 +6,21 @@
 5. 讀入並顯示其圖
 6. 互動式查看游標所在之pixel value
 
-bk_cat.png
+color.png
 ```
-img = imread('cat_1.jpg');
-img3 = im2gray(img);
-img2 = imbinarize(img3);
+img_color = imread('cat_3.jpg');
 
-imshow(img2), impixelinfo
+imwrite(img_color, 'color.png');
+imshow(img_color), impixelinfo
+imfinfo('color.png')
+```
+
+gray.png
+```
+img_color = imread('cat_3.jpg');
+img_gray = im2gray(img_color);
+
+imwrite(img_gray, 'gray.png');
+imshow(img_gray), impixelinfo
+imfinfo('gray.png')
 ```
