@@ -6,6 +6,7 @@
 5. 讀入並顯示其圖
 6. 互動式查看游標所在之pixel value
 
+bk_cat.png
 ```
 img = imread('cat_1.jpg');
 img3 = im2gray(img);
