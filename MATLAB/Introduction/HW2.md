@@ -24,3 +24,16 @@ imwrite(img_gray, 'gray.png');
 imshow(img_gray), impixelinfo
 imfinfo('gray.png')
 ```
+
+bk.png
+```
+img_color = imread('cat_3.jpg');
+img_gray = im2gray(img_color);
+img_bw = imbinarize(img_gray);
+
+imwrite(img_bw, 'bw.png');
+imshow(img_bw), impixelinfo
+imfinfo('bw.png')
+```
+
+![貓咪](https://github.com/user-attachments/assets/bc66362d-937d-4d8e-9d98-84e2d01ef3d1)
