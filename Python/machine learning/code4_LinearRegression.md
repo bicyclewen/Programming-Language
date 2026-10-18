@@ -53,7 +53,7 @@ ax.set_xlabel('房間數量')
 ax.set_ylabel('房價')
 ax.legend()
 ```
-![pic](https://github.com/user-attachments/assets/67e60c29-29f9-46eb-bbf2-44586ec5a386")
+![pic](https://github.com/user-attachments/assets/67e60c29-29f9-46eb-bbf2-44586ec5a386)
 
 ### 簡單性迴歸模型
 建立預測器的步驟 : 初始物件>>>機器學習>>>機器預測
