@@ -3,7 +3,7 @@
 - 類別型 ~ cat_pl
 - 整合起來的資料管道 ~ data_pl
 
-**----**
+----
 
 ### 這章節出現過這些工具
 #管道器
@@ -31,8 +31,8 @@ ColumnTransformer : 水平合併器，水平結合不同轉換器或管道器。
 from sklearn.compose import ColumnTransformer
 ```
 
-**----**
-數值型資料的預處理
+----
+- 數值型資料的預處理
 ### 遺漏值處理
 資料集經常帶有遺失值。在進行模型訓練前，必須先將數值欄位與類別欄位分開處理。
 ```
@@ -64,8 +64,8 @@ num_pl = make_pipeline(SimpleImputer(strategy='mean'), StandardScaler())
 num_pl.fit_transform(X_num)
 ```
 
-**----**
-類別型資料的預處理
+----
+- 類別型資料的預處理
 ### 遺漏值處理
 類別欄位無法計算平均數，通常改用眾數。
 ```
@@ -87,7 +87,7 @@ cat_pl.fit_transform(X_cat)
 oh_in_pl = cat_pl.named_steps['onehotencoder']
 oh_in_pl.get_feature_names(['size','color'])
 ```
-**----**
+----
 ### ColumnTransformer 整合多種處理流程
 可以針對不同欄位、不同資料類型套用不同的處理策略。
 ```
@@ -124,6 +124,7 @@ pd.DataFrame(data_pl.fit_transform(X), columns=columns)
 ```
 
 **----**
+
 ### 數值離散化/極端值 ~ KBinsDiscretizer
 將連續型的數值切成固定的區間（Bins），轉成類別標籤，常用於特徵工程。
 ```
