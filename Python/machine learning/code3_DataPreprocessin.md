@@ -7,26 +7,26 @@
 
 ### 這章節出現過這些工具
 #管道器
-make_pipeline : 串接多個處理步驟的管道器
+- make_pipeline : 串接多個處理步驟的管道器
 ```
 from sklearn.pipeline import make_pipeline
 ```
 
 #轉換器
-SimpleImputer : 處理遺漏值
+- SimpleImputer : 處理遺漏值
 ```
 from sklearn.impute import SimpleImputer
 ```
-StandardScaler : 數據標準化 aka Z-score標準化，將資料減去平均值，再除以標準差。
-MinMaxScaler : 將數據做線性壓縮至[0,1]區間。適合圖像處理或文字多0、1編碼時。
-OneHotEncoder : 將類別型資料轉成0、1數字。類別型資料獨熱編碼。
-KBinsDiscretizer : 處理極端值，連續數值離散化/分箱
+- StandardScaler : 數據標準化 aka Z-score標準化，將資料減去平均值，再除以標準差。
+- MinMaxScaler : 將數據做線性壓縮至[0,1]區間。適合圖像處理或文字多0、1編碼時。
+- OneHotEncoder : 將類別型資料轉成0、1數字。類別型資料獨熱編碼。
+- KBinsDiscretizer : 處理極端值，連續數值離散化/分箱
 ```
 from sklearn.preprocessing import StandardScaler, MinMaxScaler, KBinsDiscretizer, OneHotEncoder
 ```
 
 #合併器
-ColumnTransformer : 水平合併器，水平結合不同轉換器或管道器。
+- ColumnTransformer : 水平合併器，水平結合不同轉換器或管道器。
 ```
 from sklearn.compose import ColumnTransformer
 ```
