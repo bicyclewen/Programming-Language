@@ -123,7 +123,7 @@ print('整合後的欄位資料：',columns)
 pd.DataFrame(data_pl.fit_transform(X), columns=columns)
 ```
 
-**----**
+----
 
 ### 數值離散化/極端值 ~ KBinsDiscretizer
 將連續型的數值切成固定的區間（Bins），轉成類別標籤，常用於特徵工程。
