@@ -34,3 +34,4 @@ for i = 1:length(file)
     fprintf('%s | %d\n', file{i}, info.FileSize);
 end
 ```
+<img width="119" height="144" alt="image" src="https://github.com/user-attachments/assets/ffeded7d-22ee-4ded-b40e-f4a22b4ec086" />
