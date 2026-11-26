@@ -12,7 +12,7 @@ j1 = 0; j2 = 255;
 img_math = ((j2 - j1) / (i2 - i1)) * (img - i1) + j1;
 
 %2
-img_adj = imadjust(img, [0/255, 100/255], [0, 1], 1);
+img_adj = imadjust(img, [0/255, 100/255], [], 1);
 
 
 figure;
@@ -37,7 +37,7 @@ j1 = 0;   j2 = 255;
 img_math = ((j2 - j1) / (i2 - i1)) * (img - i1) + j1;
 
 %2
-img_adj = imadjust(img, [130/255, 255/255], [0, 1], 1);
+img_adj = imadjust(img, [130/255, 255/255], [], 1);
 
 figure;
 subplot(3, 2, 1), imshow(img), title('原圖');
@@ -60,7 +60,7 @@ j1 = 0;   j2 = 255;
 img_math = ((j2 - j1) / (i2 - i1)) * (img - i1) + j1;
 
 %2
-img_adj = imadjust(img, [75/255, 195/255], [0, 1], 1);
+img_adj = imadjust(img, [75/255, 195/255], [], 1);
 
 
 figure;
