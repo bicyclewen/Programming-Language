@@ -6,6 +6,27 @@
 ```
 img = rgb2gray(imread('cat.jpg'));
 imshow(img), figure, imhist(img), axis tight;
+
+%1
+i1 = 0; i2 = 100;
+j1 = 0; j2 = 255;
+
+img_d = double(img);
+img_math = zeros(size(img_d));
+
+idx1 = (img_d >= i1) & (img_d <= i2);
+img_math(idx1) = ((j2 - j1) / (i2 - i1)) * (img_d(idx1) - i1) + j1;
+
+idx2 = img_d > i2;
+img_math(idx2) = 255;
+
+img_math = uint8(img_math);
+
+figure, imshow(img_math);
+figure, imhist(img_math), axis tight;
+
+%2
+img_adj = imadjust(img, [0/255, 100/255], [0, 1], 1);
+
+imshow(img_adj), figure, imhist(img_adj), axis tight;
 ```
-<img width="500" height="317" alt="image" src="https://github.com/user-attachments/assets/7895f7a6-c21f-4bb3-abe7-202314502a08" />
-<img width="488" height="301" alt="image" src="https://github.com/user-attachments/assets/9cf54cd2-f06c-42a2-baca-270da8defc3d" />
